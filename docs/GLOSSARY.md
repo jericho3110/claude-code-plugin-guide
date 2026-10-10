@@ -16,6 +16,10 @@
 | always-on cost | tokens a plugin adds to every session | [HOW §10](HOW_PLUGINS_WORK.md#10-what-a-plugin-costs-tokens) |
 | RCE | remote code execution: code you didn't choose running on your machine | [SECURITY §3](SECURITY.md#3-rce-every-way-code-can-run) |
 | path traversal | a `../` path that escapes the folder it should stay in | [SECURITY §4](SECURITY.md#4-this-repos-auditor-defenses) |
+| declared / fetched / loaded | the three stages of a plugin: in settings, on disk, in the running session | [INSTALL §2](INSTALL_PROCESS.md#2-the-mental-model-declared-fetched-loaded) |
+| content addressing | naming data by a hash of its content (a git commit SHA) | [INSTALL §4.3](INSTALL_PROCESS.md#43-compute-the-version-pinning-and-content-addressing) |
+| inversion of control | the framework calls your code when an event happens | [INSTALL §6](INSTALL_PROCESS.md#6-step-4-run-events-call-the-plugin) |
+| plugin architecture (microkernel) | a small core with extension points others fill | [INSTALL §1](INSTALL_PROCESS.md#1-why-plugins-exist-the-plugin-architecture) |
 | functional core, imperative shell | pure logic returns data; a thin outer layer does I/O | [ARCHITECTURE](ARCHITECTURE.md#design-choices) |
 
 ## References

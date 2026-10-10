@@ -157,7 +157,7 @@ Real files from this machine after `claude plugin install ponytail@ponytail`:
 
 ```text
 ~/.claude/
-├── settings.json                         "enabledPlugins": { "ponytail@ponytail": true }
+├── settings.json                         "extraKnownMarketplaces": { "ponytail": {...} }, "enabledPlugins": { "ponytail@ponytail": true }
 └── plugins/
     ├── known_marketplaces.json           each marketplace: its source repo + local folder
     ├── installed_plugins.json            each plugin: scope, version, installPath, gitCommitSha
@@ -168,8 +168,14 @@ Real files from this machine after `claude plugin install ponytail@ponytail`:
     └── data/ponytail-ponytail/           ${CLAUDE_PLUGIN_DATA}
 ```
 
+(An earlier version of this tree left out `extraKnownMarketplaces`: `marketplace add` records the
+marketplace in your settings as well as in `known_marketplaces.json`.)
+
 `installed_plugins.json` records the exact **git commit** that was installed.
 That's how you can tell later precisely which code you're running.
+
+Step by step, with the theory behind each step (indexes, content addressing,
+immutable caches, reconciliation, inversion of control): [INSTALL_PROCESS.md](INSTALL_PROCESS.md).
 
 ## 6. Scopes: who gets the plugin
 
