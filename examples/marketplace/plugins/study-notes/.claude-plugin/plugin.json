@@ -1,0 +1,9 @@
+{
+  "name": "study-notes",
+  "version": "0.1.0",
+  "description": "One skill that explains a file for a learner: what it does, the concepts it uses, and one exercise",
+  "author": {
+    "name": "jericho3110"
+  },
+  "license": "MIT"
+}

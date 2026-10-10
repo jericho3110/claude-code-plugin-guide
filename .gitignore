@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ruff_cache/
+.env
+*.log
+graphify-out/
+.DS_Store
+Thumbs.db

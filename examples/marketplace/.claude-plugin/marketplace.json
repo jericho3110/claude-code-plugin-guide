@@ -1,0 +1,14 @@
+{
+  "name": "learning-examples",
+  "description": "A one-plugin marketplace for learning how plugins are packaged",
+  "owner": {
+    "name": "jericho3110"
+  },
+  "plugins": [
+    {
+      "name": "study-notes",
+      "source": "./plugins/study-notes",
+      "description": "One skill that explains a file for a learner"
+    }
+  ]
+}
