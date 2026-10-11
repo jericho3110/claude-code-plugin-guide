@@ -2,6 +2,11 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions: [SemVer](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-10-11
+
+### Added
+- `docs/CONTEXT_MEMORY_CACHE.md`: context window, memory (CLAUDE.md and auto memory) and the prompt cache compared; checked against the Claude Code and Claude API docs, with found-live notes (compaction, memory keyed by folder path, a corrected cache-price claim).
+
 ## [0.2.0] - 2026-10-10
 
 ### Added

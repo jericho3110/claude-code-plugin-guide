@@ -10,6 +10,10 @@
 | hook | a command run automatically at a lifecycle event | [HOW §4](HOW_PLUGINS_WORK.md#4-what-a-plugin-can-contain), [SECURITY §3](SECURITY.md#3-rce-every-way-code-can-run) |
 | MCP server | a program or URL that gives Claude extra tools (Model Context Protocol) | [HOW §4](HOW_PLUGINS_WORK.md#4-what-a-plugin-can-contain) |
 | LSP server | a language server: code intelligence (Language Server Protocol) | [HOW §4](HOW_PLUGINS_WORK.md#4-what-a-plugin-can-contain) |
+| context window | everything the model sees in one request, and the limit on its size | [CONTEXT §1](CONTEXT_MEMORY_CACHE.md#1-the-context-window) |
+| compaction | replacing older conversation with a summary to free context | [CONTEXT §1](CONTEXT_MEMORY_CACHE.md#1-the-context-window) |
+| auto memory | notes Claude writes in `~/.claude/projects/<project>/memory/`, loaded each session | [CONTEXT §2](CONTEXT_MEMORY_CACHE.md#2-memory) |
+| prompt cache | server-side reuse of an identical prompt prefix: cheaper and faster, same output | [CONTEXT §3](CONTEXT_MEMORY_CACHE.md#3-the-prompt-cache) |
 | monitor | a background command started with the session | [SECURITY §3](SECURITY.md#3-rce-every-way-code-can-run) |
 | scope | who gets a plugin: user, project, local or managed | [HOW §6](HOW_PLUGINS_WORK.md#6-scopes-who-gets-the-plugin) |
 | `${CLAUDE_PLUGIN_ROOT}` | the installed plugin's folder, for finding its own files | [HOW §4](HOW_PLUGINS_WORK.md#4-what-a-plugin-can-contain) |

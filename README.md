@@ -58,6 +58,7 @@ installed are skipped with a note.
 | --- | --- |
 | [docs/HOW_PLUGINS_WORK.md](docs/HOW_PLUGINS_WORK.md) | **start here**: marketplaces, plugins, components, files on disk, scopes, every command, updates, token cost |
 | [docs/INSTALL_PROCESS.md](docs/INSTALL_PROCESS.md) | **the install process in theory and practice**: one real install followed step by step (catalog → resolve → version → cache → record → load → run → update), with the computer-science concept behind each step |
+| [docs/CONTEXT_MEMORY_CACHE.md](docs/CONTEXT_MEMORY_CACHE.md) | **context window vs memory vs prompt cache**: what each is, how memory is loaded, cache prices and lifetime, one turn end to end, Python analogies |
 | [docs/CASE_STUDIES.md](docs/CASE_STUDIES.md) | two real installs: ponytail (a plugin with hooks) and graphify (a skill with its own installer) |
 | [docs/SECURITY.md](docs/SECURITY.md) | threat model, checklist before installing, every RCE path, the auditor's defenses |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | how the auditor is built and why |
